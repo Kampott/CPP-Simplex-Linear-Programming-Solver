@@ -11,10 +11,10 @@ public:
     Matrix(const Matrix& other) : rows(other.rows), cols(other.cols), data(other.data) {}
 
     Matrix& operator=(const Matrix& other) {
-        if (this != &other) { // ѕроверка на самоприсваивание
+        if (this != &other) { 
             rows = other.rows;
             cols = other.cols;
-            data = other.data; // std::vector поддерживает глубокое копирование
+            data = other.data;
         }
         return *this;
     }
